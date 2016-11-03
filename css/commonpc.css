@@ -1,0 +1,249 @@
+*{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font: normal 100% "微软雅黑",sans-serif;
+	font-size: 1.05em;
+}
+nav{
+	z-index: 3;
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	min-width: 900px;
+	background-color: rgba(224, 227, 235,0.9);
+}
+ul{
+	width: 180px;
+	list-style: none;
+	position: relative;
+	left: 30px;
+}
+a{
+	color: #B21D27;
+	text-decoration: none;
+}
+.nav_container{
+	margin: 0 auto;
+	width: 900px;
+	height: 60px;
+}
+.logo{
+	float: left;
+	width: 150px;
+	height: 60px;
+	text-align: center;
+	padding-top: 8px;
+}
+.login_bar{
+	line-height: 60px;
+	text-align: center;
+	float: right;
+	width: 110px;
+	height: 60px;
+	color: #B21D27;
+}
+#login{
+	display: inline-block;
+	cursor: pointer;
+}
+#login_content{
+	position: relative;
+	top: 70px;
+	margin: 0 auto;
+	width: 380px;
+	height: 450px;
+	background-color: white;
+	padding: 40px 80px 30px;
+	font-size: 0.7em;
+	color: darkgrey;
+}
+.pannel{
+	position: relative;
+	left: 0px;
+	width: 100%;
+}
+.pannel li{
+	margin-bottom: 20px;
+}
+.pannel li input{
+	font-size: 1.2em;
+	width: 100%;
+	height: 45px;
+	border: solid darkgrey 1px;
+	padding: 0 5px;
+}
+.login_logo{
+	/*display: inline-block;*/
+	margin: 0 auto 20px auto;
+	width: 220px;
+	height: 54px;
+}
+#sub_btn{
+	background-color: #B21D27;
+	color: whitesmoke;
+}
+#reg{
+	color: aqua;
+	float: right;
+}
+#in_checker{
+	width: 40%;
+}
+#check_num{
+	float: right;
+	width: 40%;
+}
+.alert{
+	display: none;
+	border: #B21D27 solid 1px;
+	color: #B21D27;
+	background-color: #F5D7D7;
+}
+#signin{
+	display: inline-block;
+	cursor: pointer;
+}
+#signin_content{
+	position: relative;
+	top: 30px;
+	margin: 0 auto;
+	width: 380px;
+	height: 510px;
+	background-color: white;
+	padding: 40px 80px 30px;
+	font-size: 0.7em;
+	color: darkgrey;
+}
+#reg_btn{
+	background-color: #B21D27;
+	color: whitesmoke;
+}
+.main{
+	padding-top: 60px;
+	height: 1200px;
+	width: 100%;
+	min-width: 900px;
+
+}
+.main_container{
+	width: 900px;
+	margin: 0 auto;
+
+}
+.carousel{
+	width: 900px;
+	height: 500px;
+	z-index: 1;
+}
+.menu{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+	width: 900px;
+	height: 100px;
+	margin: 0 auto;
+	z-index: 2;
+	position: relative;
+	top: -40px;
+}
+.menu_bar{
+	display: inline-block;
+	background-color: #B21D27;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 100px;
+	color: white;
+}
+.main_content{
+	position: relative;
+	top: -30px;
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	background-color: aqua;
+}
+.menu_tree{
+	float: left;
+	display: inline-block;
+	height: 100%;
+	width: 26%;
+	padding: 1%;
+	background-color: #B21D27;
+	border-radius: 3px;
+	color: whitesmoke;
+}
+.first img{
+	width: auto;
+	height: 25px;
+}
+.second{
+	cursor: pointer;
+}
+.node2{
+	display: none;
+}
+/*.show_logincontent{
+	display: block;
+}*/
+.show_team{
+	display: block;
+}
+.show_content{
+	float: right;
+	display: inline-block;
+	height: 452px;
+	width: 69%;
+	border: 1px #B21D27 solid;
+	border-radius: 3px;
+	padding: 9px;
+}
+.teampages{
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.teams{
+	cursor: pointer;
+	color: whitesmoke;
+	text-decoration: none;
+}
+.show_page{
+	display: block;
+}
+.clear{
+	clear: both;
+}
+#pic_container{
+	width: 900px;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+.focusBox {
+    position: absolute;
+    top: 460px;
+  	width: 120px;
+	left: 50%;
+	margin-left: -30px;
+	list-style: none;
+}
+
+.focusBox li {
+	float: left;
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	background: gray;
+	cursor: pointer;
+}
+
+.focusBox li.cur {
+	background: #f60;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}

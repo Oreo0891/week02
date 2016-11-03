@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/commonpc.css"/>
+		<link rel="stylesheet" type="text/css" href="css/regpc.css"/>
+		<script src="js/reg.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="signin_content">
+					<div class="login_logo">
+						<img src="img/logo.png"/>
+					</div>
+					<form name="regform" action="login.html" method="post">
+						<ul class="pannel">
+							<li><input type="text" id="regname" placeholder="用户名/手机号/邮箱"/><span class="alert">请输入账号</span></li>
+							<li><input type="password" id="regpsw" placeholder="请输入密码"/><span class="alert">请输入密码</span></li>
+							<li><input type="password" id="repsw" placeholder="请再次输入密码"/><span class="alert">两次密码不一致</span></li>
+							<li><input type="text" id="in_checker" placeholder="请输入验证码"/><input type="text" id="check_num" readonly="readonly"/><span class="alert">验证码错误</span></li>
+							<li><input type="button" id="reg_btn" value="注册" /></li>
+						</ul>
+					</form>
+				</div>
+	</body>
+</html>
