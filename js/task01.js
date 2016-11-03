@@ -2,11 +2,14 @@
 if(window.addEventListener){
 	window.addEventListener("load",getSecondMenu,true);
 	window.addEventListener("load",getTeamPages,true);
+//	window.addEventListener("load",getFirstMenu,true);
 	
 	
 }else{
 	window.attachEvent("onload",getSecondMenu);
 	window.attachEvent("onload",getTeamPages);
+//	window.attachEvent("onload",getFirstMenu);
+	
 	
 }
 
@@ -28,20 +31,46 @@ function getTeamPages(){
 function showTeamPages(){
 	var pages = document.getElementsByClassName("teampages");
 	var nowpage = document.getElementsByClassName("show_page");
+	var def_page = document.getElementById("def_page");
 	for (var j = 0;j<nowpage.length;j++) {
 		nowpage[j].className = "teampages";
 	}
+	def_page.style.display = "none";
 	pages[this.value].className = "show_page";
 }
 
+////获取一级节点 并给其绑定事件
+//function getFirstMenu(){
+//	var nodes = document.getElementsByClassName("btn");
+//	for (var i = 0;i<nodes.length;i++) {
+//		if(nodes[i].addEventListener){
+//			nodes[i].addEventListener("click",showNext,true);
+//		}
+//	}
+//}
+//
+////显示二级菜单
+//function showNext(){
+//	var target = this.nextSibling.nextSibling;
+//	var list = document.getElementsByClassName("show_team");
+//	if(target == list[0]){
+//		target.className = "node";
+//	}else{
+//		for (var n = 0;n<list.length;n++) {
+//			list[n].className = "node";
+//		}
+//		target.className = "show_team";
+//	}
+//}
+
 //获取二级节点 并给其绑定事件
 function getSecondMenu(){
-	var nodes = document.getElementsByClassName("second");
-	for (var m = 0 ;m<nodes.length;m++) {
-		if(nodes[m].addEventListener){
-			nodes[m].addEventListener("click",showMenu,true);
+	var nodes1 = document.getElementsByClassName("second");
+	for (var m = 0 ;m<nodes1.length;m++) {
+		if(nodes1[m].addEventListener){
+			nodes1[m].addEventListener("click",showMenu,true);
 		}else{
-			nodes[m].attachEvent("onclick",showMenu);
+			nodes1[m].attachEvent("onclick",showMenu);
 		}
 
 	}
@@ -60,11 +89,6 @@ function showMenu(){
 		target.className = "show_team";
 	}
 }
-
-
-//给各个组件绑定验证事件
-
-//
 
 // Created by guoqy
 // 图片轮播效果

@@ -4,8 +4,8 @@
 		<meta charset="utf-8" />
 		<title>testname</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="css/commonpc.css"/>
-		<link rel="stylesheet" type="text/css" href="css/commonmobile.css"/>
+		<link rel="stylesheet" type="text/css" media="screen and (min-device-width :900px)" href="css/commonpc.css"/>
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width :468px)" href="css/commonmobile.css"/>
 		<script src="js/task01.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -19,7 +19,6 @@
 					<span id="signin"><a href="login.html">注册</a></span>&nbsp;
 				</div>
 			</div>
-			<div class="clear">
 				
 			</div>			
 		</nav>
@@ -27,7 +26,7 @@
 			<div class="main_container">
 				<div class="carousel">
 					<div id="pic_container">
-						<img src="img/pic1.jpg" width="900" height="500" id="focusImg">
+						<img src="img/pic1.jpg" id="focusImg">
 	    				<ul class="focusBox">
 		   					<li onclick="showPic(1);"></li>
 			        		<li onclick="showPic(2);"></li>
@@ -52,7 +51,7 @@
 				<div class="main_content">
 					<div class="menu_tree">
 						<ul>
-							<li class="first"><img src="img/eastern_logo.png" />&nbsp;东部 联盟
+							<li class="first"><img src="img/eastern_logo.png" class="union"/>&nbsp;<span class="btn">东部 联盟</span>
 								<ul class="node">
 									<li class="second">大西洋赛区</li>
 									<ul class="node2">
@@ -80,7 +79,7 @@
 									</ul>
 								</ul>
 							</li>
-							<li class="first"><img src="img/western_logo.png" />&nbsp;西部 联盟
+							<li class="first"><img src="img/western_logo.png" class="union"/>&nbsp;<span class="btn">西部 联盟</span>
 								<ul class="node">
 									<li class="second">西南赛区</li>
 									<ul class="node2">
@@ -114,19 +113,130 @@
 					</div>
 					<div class="show_content">
 						<div class="teampages">
-							<img src="img/celtics.png"/>
+							<img src="img/bos.png"/>
+							<ul class="teammsg">
+								<li>进入NBA：1946年</li>
+								<li>主场：TD 花园 分区：大西洋赛区</li>
+								<li>官网：http://www.nba.com/celtics/</li>
+								<li>主教练：布拉德-史蒂文斯</li>
+							</ul>
+							</br></br>
+							<p>球队介绍：</p>
+							波士顿凯尔特人队是NBA现有30支球队之一，NBA的前身、BAA创始球队之一，1947年进入NBA，凯尔特人和尼克斯是仅有的两支参加了1946年首届BAA联赛且至今没有迁移过城市的NBA球队。
+							<p>先发五虎：</p>
+							</br>
+							<table class="teammem">
+								<tr><th>位置</th><th>控球后卫</th><th>得分后卫</th><th>小前锋</th><th>大前锋</th><th>中锋</th></tr>
+								<tr><td>姓名</td><td>I.托马斯</td><td>A.布拉德利</td><td>J.克劳德</td><td>A.约翰逊</td><td>A.霍福德</td></tr>
+								<tr><td>号码</td><td>4</td><td>0</td><td>99</td><td>90</td><td>42</td></tr>
+								<tr><td>场均得分</td><td>24.2</td><td>19.2</td><td>13.5</td><td>9.5</td><td>12.0</td></tr>
+							</table>
 						</div>
 						<div class="teampages">
-							<img src="img/raptors.png"/>
+							<img src="img/TOR.png"/>
+							<ul class="teammsg">
+								<li>进入NBA：1995年</li>
+								<li>主场：加拿大航空中心 分区：大西洋赛区</li>
+								<li>官网：http://www.nba.com/raptors/</li>
+								<li>主教练：德韦恩-凯西</li>
+							</ul>
+								</br></br>
+								<p>球队介绍：</p>
+								多伦多猛龙建队于1995年，他和当时的温哥华灰熊一起加入联盟，作为NBA加拿大扩军计划中的重要内容。
+								<p>先发五虎：</p>
+								</br>
+								<table class="teammem">
+								<tr><th>位置</th><th>控球后卫</th><th>得分后卫</th><th>小前锋</th><th>大前锋</th><th>中锋</th></tr>
+								<tr><td>姓名</td><td>K.罗瑞</td><td>D.德罗赞</td><td>D.卡罗尔</td><td>T.罗斯</td><td>J.瓦兰丘纳斯</td></tr>
+								<tr><td>号码</td><td>7</td><td>10</td><td>5</td><td>31</td><td>17</td></tr>
+								<tr><td>场均得分</td><td>18.5</td><td>36.2</td><td>8.2</td><td>6.5</td><td>16.0</td></tr>
+							</table>
+							</br>
 						</div>
 						<div class="teampages">
-							<img src="img/knicks.png"/>
+							<img src="img/NYK.png"/>
+							<ul class="teammsg">
+								<li>进入NBA：1946年</li>
+								<li>主场：麦迪逊广场花园 分区：大西洋赛区</li>
+								<li>官网：http://www.nba.com/knicks/</li>
+								<li>主教练：杰夫-霍纳塞克</li>
+							</ul>
+								</br></br>
+								<p>球队介绍：</p>
+								纽约尼克斯队是从最初的BAA联盟开始就没有搬迁过城市的两支球队之一(另外一支是波士顿凯尔特人队)。尼克斯在联盟的三个不同时代有过辉煌的表现，每个时代都相差二十年左右。
+								<p>先发五虎：</p>
+								</br>
+								<table class="teammem">
+								<tr><th>位置</th><th>控球后卫</th><th>得分后卫</th><th>小前锋</th><th>大前锋</th><th>中锋</th></tr>
+								<tr><td>姓名</td><td>D.罗斯</td><td>C.李</td><td>C.安东尼</td><td>J.诺阿</td><td>波尔津吉斯</td></tr>
+								<tr><td>号码</td><td>25</td><td>5</td><td>7</td><td>13</td><td>6</td></tr>
+								<tr><td>场均得分</td><td>16.2</td><td>9.8</td><td>21.0</td><td>2.0</td><td>14.5</td></tr>
+							</table>
 						</div>
 						<div class="teampages">
-							<img src="img/nets.png"/>
+							<img src="img/BKN.png"/>
+							<ul class="teammsg">
+								<li>进入NBA：1967年</li>
+								<li>主场：巴克莱中心 分区：大西洋赛区</li>
+								<li>官网：http://nba.hupu.com/teams/nets</li>
+								<li>主教练：肯尼-阿特金森</li>
+							</ul>
+								</br></br>
+								<p>球队介绍：</p>
+								布鲁克林篮网是NBA现有30支球队之一，1968-1976年曾加入过ABA联盟，1977年进入NBA至今，东部联盟大西洋赛区的球队。
+								<p>先发五虎：</p>
+								</br>
+								<table class="teammem">
+								<tr><th>位置</th><th>控球后卫</th><th>得分后卫</th><th>小前锋</th><th>大前锋</th><th>中锋</th></tr>
+								<tr><td>姓名</td><td>林书豪</td><td>博格丹诺维奇</td><td>J.克劳德</td><td>T.布克</td><td>B.洛佩斯</td></tr>
+								<tr><td>号码</td><td>7</td><td>44</td><td>24</td><td>35</td><td>11</td></tr>
+								<tr><td>场均得分</td><td>15.0</td><td>15.4</td><td>2.2</td><td>8.2</td><td>19.8</td></tr>
+							</table>
+							</br>
 						</div>
 						<div class="teampages">
-							<img src="img/76ers.png"/>
+							<img src="img/PHI.png"/>
+							<ul class="teammsg">
+								<li>进入NBA：1949年</li>
+								<li>主场：富国银行中心 分区：大西洋赛区</li>
+								<li>官网：http://www.nba.com/sixers/	</li>
+								<li>主教练：布雷特-布朗</li>
+							</ul>
+								</br></br>
+								<p>球队介绍：</p>
+								作为联盟历史最悠久的球队之一，费城76人队史上涌现过无数各具特色的一线巨星，其中名人堂成员就有9位之多。
+								<p>先发五虎：</p>
+								</br>
+								<table class="teammem">
+								<tr><th>位置</th><th>控球后卫</th><th>得分后卫</th><th>小前锋</th><th>大前锋</th><th>中锋</th></tr>
+								<tr><td>姓名</td><td>罗德里格斯</td><td>G.亨德森</td><td>R.科温顿</td><td>D.沙里奇</td><td>J.恩比德</td></tr>
+								<tr><td>号码</td><td>14</td><td>12</td><td>33</td><td>9</td><td>21</td></tr>
+								<tr><td>场均得分</td><td>12.0</td><td>19.2</td><td>4.0</td><td>11.2</td><td>17.3</td></tr>
+							</table>
+							</br>
+						</div>
+						<div id="def_page">
+							<p id="today">今日赛果：</p>
+							<ul id="games1">
+								<li>猛龙&nbsp;113:103&nbsp;奇才</li>
+								<li>76人&nbsp;93:109&nbsp;黄蜂</li>
+								<li>湖人&nbsp;123:116&nbsp;老鹰</li>
+								<li>公牛&nbsp;100:107&nbsp;凯尔特人</li>
+								<li>火箭&nbsp;118:99&nbsp;尼克斯</li>
+								<li>小牛&nbsp;81:97&nbsp;勇士</li>
+								<li>公牛&nbsp;100:107&nbsp;凯尔特人</li>
+								<li>火箭&nbsp;118:99&nbsp;尼克斯</li>
+							</ul>
+							<ul id="games2">
+								<li>猛龙&nbsp;113:103&nbsp;奇才</li>
+								<li>76人&nbsp;93:109&nbsp;黄蜂</li>
+								<li>湖人&nbsp;123:116&nbsp;老鹰</li>
+								<li>公牛&nbsp;100:107&nbsp;凯尔特人</li>
+								<li>火箭&nbsp;118:99&nbsp;尼克斯</li>
+								<li>小牛&nbsp;81:97&nbsp;勇士</li>
+								<li>公牛&nbsp;100:107&nbsp;凯尔特人</li>
+								<li>火箭&nbsp;118:99&nbsp;尼克斯</li>
+							</ul>
 						</div>
 					</div>
 				</div>

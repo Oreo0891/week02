@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font: normal 100% "微软雅黑",sans-serif;
+	font-size: 1.03em;
+}
+nav{
+	z-index: 3;
+	position: fixed;
+	height: 40px;
+	width: 98%;
+	background-color: rgba(224, 227, 235,0.9);
+}
+a{
+	color: #B21D27;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	
+}
+.logo{
+	float: left;
+	position: relative;
+	top: 6px;
+	left: 3px;
+}
+.logo img{
+	width: 60%;
+	height: 60%;
+}
+.login_bar{
+	line-height: 40px;
+	text-align: center;
+	float: right;
+	height: 40px;
+}
+.carousel{
+	/*margin: 0 auto;*/
+	width: 100%;
+	height: 40%;
+}
+#focusImg{
+	width: 100%;
+	height: 40%;
+}
+.focusBox {
+    position: absolute;
+    top: 40%;
+  	width: auto;
+	left: 41%;
+	/*margin-left: -30px;*/
+	list-style: none;
+}
+.focusBox li.cur {
+	background: #f60;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.focusBox li {
+	float: left;
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	background: gray;
+	cursor: pointer;
+}
+.union{
+	display: none;
+}
+.login_bar{
+	/*position: relative;*/
+	/*right: 30px;*/
+	line-height: 40px;
+	text-align: center;
+	/*float: right;*/
+	/*width: 110px;*/
+	height: 40px;
+}
+.main{
+	padding-top: 40px;
+	height: auto;
+	width: 100%;
+}
+.menu{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	z-index: 2;
+	position: relative;
+	top: 10px;
+}
+.menu_bar{
+	display: inline-block;
+	background-color: #B21D27;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 60px;
+	color: white;
+}
+.main_content{
+	position: relative;
+	top: 25px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.menu_tree{
+	display: inline-block;
+	/*height: 100%;*/
+	width: 98%;
+	padding: 1%;
+	background-color: #B21D27;
+	/*border-radius: 3px;*/
+	color: whitesmoke;
+}
+.first img{
+	width: auto;
+	height: 25px;
+}
+.first{
+	text-align: center;
+}
+.node2{
+	display: none;
+}
+.show_team{
+	display: block;
+}
+.show_content{
+	/*float: right;*/
+	display: inline-block;
+	width: 96%;
+	/*border: 1px #B21D27 solid;*/
+	padding: 3%;
+}
+.teampages{
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+#default{
+	text-align: center;
+}
+#today{
+	text-align: center;
+}
+#games1{
+	display: inline-block;
+	width: auto;
+}
+#games2{
+	display: inline-block;
+	width: auto;
+}
+.def_page{
+	text-align: center;
+}
+.teams{
+	color: whitesmoke;
+}
+.teammsg{
+	display: inline-block;
+	width: auto;
+}
+.teammem{
+	text-align: center;
+	margin: 0 auto;
+}
+.show_page{
+	display: block;
+}

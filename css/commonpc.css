@@ -43,10 +43,6 @@ a{
 	height: 60px;
 	color: #B21D27;
 }
-#login{
-	display: inline-block;
-	cursor: pointer;
-}
 #login_content{
 	position: relative;
 	top: 70px;
@@ -121,7 +117,7 @@ a{
 }
 .main{
 	padding-top: 60px;
-	height: 1200px;
+	height: auto;
 	width: 100%;
 	min-width: 900px;
 
@@ -164,7 +160,6 @@ a{
 	width: 900px;
 	height: auto;
 	margin: 0 auto;
-	background-color: aqua;
 }
 .menu_tree{
 	float: left;
@@ -186,30 +181,60 @@ a{
 .node2{
 	display: none;
 }
-/*.show_logincontent{
-	display: block;
-}*/
 .show_team{
 	display: block;
 }
 .show_content{
 	float: right;
 	display: inline-block;
-	height: 452px;
 	width: 69%;
 	border: 1px #B21D27 solid;
 	border-radius: 3px;
-	padding: 9px;
+	padding: 16px 10px;
+	font-size: 0.92em;
 }
 .teampages{
 	height: 100%;
 	width: 100%;
 	display: none;
 }
+#default{
+	text-align: center;
+}
+#today{
+	text-align: center;
+}
+#intview{
+	float: right;
+}
+#games1{
+	float: left;
+	display: inline-block;
+	width: auto;
+}
+#games2{
+	float: right;
+	display: inline-block;
+	width: auto;
+	margin-right: 60px;
+}
+.def_page{
+	text-align: center;
+}
 .teams{
+	font-size: 0.99em;
 	cursor: pointer;
 	color: whitesmoke;
 	text-decoration: none;
+}
+.teammsg{
+	display: inline-block;
+	width: auto;
+}
+.teammem{
+	/*vertical-align: auto;*/
+	text-align: center;
+	margin: 0 auto;
 }
 .show_page{
 	display: block;
@@ -223,6 +248,10 @@ a{
 	margin: 0 auto;
 	position: relative;
 }
+#focusImg{
+	width: 900px;
+	height: 500px;
+}
 .focusBox {
     position: absolute;
     top: 460px;
@@ -231,7 +260,6 @@ a{
 	margin-left: -30px;
 	list-style: none;
 }
-
 .focusBox li {
 	float: left;
 	margin-right: 10px;
@@ -241,7 +269,6 @@ a{
 	background: gray;
 	cursor: pointer;
 }
-
 .focusBox li.cur {
 	background: #f60;
 	opacity: 0.6;
