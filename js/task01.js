@@ -8,9 +8,7 @@ if(window.addEventListener){
 }else{
 	window.attachEvent("onload",getSecondMenu);
 	window.attachEvent("onload",getTeamPages);
-//	window.attachEvent("onload",getFirstMenu);
-	
-	
+//	window.attachEvent("onload",getFirstMenu);	
 }
 
 //获取球队名称 将球队名称与球队首页挂钩(绑定事件)
