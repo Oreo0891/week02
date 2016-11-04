@@ -2,13 +2,12 @@
 if(window.addEventListener){
 	window.addEventListener("load",getSecondMenu,true);
 	window.addEventListener("load",getTeamPages,true);
-//	window.addEventListener("load",getFirstMenu,true);
-	
+	window.addEventListener("load",show,true)
 	
 }else{
 	window.attachEvent("onload",getSecondMenu);
 	window.attachEvent("onload",getTeamPages);
-//	window.attachEvent("onload",getFirstMenu);	
+	window.attachEvent("onload",show)
 }
 
 //获取球队名称 将球队名称与球队首页挂钩(绑定事件)
@@ -36,30 +35,6 @@ function showTeamPages(){
 	def_page.style.display = "none";
 	pages[this.value].className = "show_page";
 }
-
-////获取一级节点 并给其绑定事件
-//function getFirstMenu(){
-//	var nodes = document.getElementsByClassName("btn");
-//	for (var i = 0;i<nodes.length;i++) {
-//		if(nodes[i].addEventListener){
-//			nodes[i].addEventListener("click",showNext,true);
-//		}
-//	}
-//}
-//
-////显示二级菜单
-//function showNext(){
-//	var target = this.nextSibling.nextSibling;
-//	var list = document.getElementsByClassName("show_team");
-//	if(target == list[0]){
-//		target.className = "node";
-//	}else{
-//		for (var n = 0;n<list.length;n++) {
-//			list[n].className = "node";
-//		}
-//		target.className = "show_team";
-//	}
-//}
 
 //获取二级节点 并给其绑定事件
 function getSecondMenu(){
@@ -110,6 +85,7 @@ function showPic(index) {
 	//设置轮播图片对应的轮播按钮样式
 	lis[index - 1].className = "cur";
 }
+
 //对轮播图片进行计算处理
 function setCurrentPic() {
 	showPic(sign);
@@ -119,8 +95,8 @@ function setCurrentPic() {
 	}
 		}
 // 窗体加载时，指定显示的图片
-window.onload = function () {
+function show(){
 	showPic(1);
 }
 //设置定时器
-window.setInterval("setCurrentPic()",1000);
+window.setInterval("setCurrentPic()",3000);

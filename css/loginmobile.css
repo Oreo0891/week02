@@ -2,10 +2,9 @@
 	position: relative;
 	top: 70px;
 	margin: 0 auto;
-	width: 100%;
+	width: 70%;
 	height: 100%;
 	background-color: white;
-	padding: 40px 80px 30px;
 	font-size: 0.7em;
 	color: darkgrey;
 }
@@ -36,4 +35,10 @@
 #reg{
 	color: aqua;
 	float: right;
+}
+.alert{
+	display: none;
+	border: #B21D27 solid 1px;
+	color: #B21D27;
+	background-color: #F5D7D7;
 }
