@@ -161,6 +161,11 @@ ul{
 	display: none;
 	width: auto;
 }
+#games1 li{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
 .def_page{
 	text-align: center;
 }
